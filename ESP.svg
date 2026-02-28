@@ -1,0 +1,39 @@
+<svg width="200" height="200" viewBox="0 0 200 200"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Linke Hälfte: Espanyol Blau -->
+  <path d="M100,10 A90,90 0 0,0 100,190 L100,100 Z" fill="#0055A4" />
+
+  <!-- Rechte Hälfte: Espanyol Weiß -->
+  <path d="M100,10 A90,90 0 0,1 100,190 L100,100 Z" fill="#FFFFFF" />
+
+  <!-- Kreisrand -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="black" stroke-width="4" />
+
+  <!-- Text: zwei Hälften übereinander -->
+  <!-- Linke Texthälfte (blau) -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="GS" font-size="60" font-weight="bold"
+        fill="#FFFFFF" clip-path="url(#left)">
+    ESP
+  </text>
+
+  <!-- Rechte Texthälfte (weiß) -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="GS" font-size="60" font-weight="bold"
+        fill="#0055A4" clip-path="url(#right)">
+    ESP
+  </text>
+
+  <!-- Clip-Bereiche -->
+  <defs>
+    <clipPath id="left">
+      <rect x="0" y="0" width="100" height="200" />
+    </clipPath>
+
+    <clipPath id="right">
+      <rect x="100" y="0" width="100" height="200" />
+    </clipPath>
+  </defs>
+
+</svg>
